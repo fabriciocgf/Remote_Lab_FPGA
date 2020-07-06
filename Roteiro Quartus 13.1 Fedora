@@ -1,0 +1,17 @@
+comados pra fazer quartus funcionar
+
+sudo yum install glibc.i686 libXext.i686 libX11.i686 libXau.i686 libXdmcp.i686 freetype.i686 fontconfig.i686 expat.i686
+
+dar permissao de execussao para o .run
+
+./QuartusProgrammerSetup-13.1.0.162.sh
+
+sudo yum install  libnsl.i686 libpng12.i686 libSM.i686 libXrender.i686 libnsl.x86_64
+
+adicionar o seguinte em .bashrc:
+
+export PATH="/home/fabriciocgf/altera/13.1/qprogrammer/bin:$PATH"
+
+criar /etc/udev/rules.d/altera-usb-blaster.rules e configurar como:
+
+ATTR{idVendor}=="09fb", ATTR{idProduct}=="6001", MODE="666"

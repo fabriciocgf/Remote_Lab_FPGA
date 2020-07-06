@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ED Remoto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ url_for('main_bp.index') }}">Laboratório Remoto</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('main_bp.Controle') }}">Controle</a></li>
+            <li><a href="{{ url_for('main_bp.Upload') }}">Upload</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+    <div class="container">
+
+      <div class="jumbotron">
+        <center><h2>Laboratório Remoto de Eletrônica Digital</h2></center>
+        <ol>
+          <li>Instale o software <a href="https://www.teamviewer.com">Teamviewer</a> em seu computador</li>
+          <li>Solicite um horário e  senha de acesso</li>
+          <li>No campo ID de parceiro digite: 856134404</li>
+          <li>Escolha um dos Laboratórios Disponíveis</li>
+          <li>Leia o roteiro para o laboratório desejado </li>
+          <li>Todos os exemplos dados no roteiro podem ser testados na placa executando o arquivo Gravar Questão XX(Número do exercício) na pasta Laboratório Remoto dentro de cada experimento</li>
+        </ol>
+      </div>
+
+      <h2>Exemplos:</h2>
+
+      <div class="row">
+        <div class="col-xs-6 col-md-4">
+          <a href="#" class="thumbnail">
+            <img src="https://i.ytimg.com/vi/i0uuNrLOmcY/maxresdefault.jpg" alt="...">
+          </a>
+        </div>
+
+        <div class="col-xs-6 col-md-4">
+          <a href="#" class="thumbnail">
+            <img src="https://i.ytimg.com/vi/w03S1SFETdg/hqdefault.jpg" alt="...">
+          </a>
+        </div>
+
+        <div class="col-xs-6 col-md-4">
+          <a href="#" class="thumbnail">
+            <img src="https://www.altera.com/content/dam/altera-www/global/en_US/images/education/univ/de0.jpg" alt="...">
+          </a>
+        </div>
+
+        <div class="col-xs-6 col-md-4">
+          <a href="#" class="thumbnail">
+            <img src="http://exsto.com.br/img/product/foto_20170405-131832-alteraDe0-1.png" alt="...">
+          </a>
+        </div>
+
+        <div class="col-xs-6 col-md-4">
+          <a href="#" class="thumbnail">
+            <img src="https://www.terasic.com.tw/attachment/archive/364/image/image_76_thumb.jpg" alt="...">
+          </a>
+        </div>
+
+        <div class="col-xs-6 col-md-4">
+          <a href="#" class="thumbnail">
+            <img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YSSFRY5B25.jpg" alt="...">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
